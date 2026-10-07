@@ -143,4 +143,6 @@ export const certificateAssets: Record<string, number> = {
   "Q7L8QBJO-1.pdf": require("../../assets/certificados/Q7L8QBJO-1.pdf"),
   "QVQ34J2N.pdf": require("../../assets/certificados/QVQ34J2N.pdf"),
   "UHBV55VE-1.pdf": require("../../assets/certificados/UHBV55VE-1.pdf"),
+  "ABHIEGOI.pdf": require("../../assets/certificados/ABHIEGOI.pdf"),
+  "VG3RIMRS.pdf": require("../../assets/certificados/VG3RIMRS.pdf"),
 };

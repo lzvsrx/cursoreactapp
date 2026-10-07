@@ -972,5 +972,33 @@ export const certificates: Certificate[] = [
     "originalName": "Q7L8QBJO.pdf",
     "type": "PDF",
     "href": "/certificados/Q7L8QBJO.pdf"
+  },
+  {
+    "title": "Sequenciador de senhas do Batman com React Native",
+    "fileName": "ABHIEGOI.pdf",
+    "originalName": "ABHIEGOI.pdf",
+    "type": "PDF",
+    "href": "/certificados/ABHIEGOI.pdf"
+  },
+  {
+    "title": "Configurando seu Ambiente de Desenvolvimento para React Native",
+    "fileName": "JXSX0MC6.pdf",
+    "originalName": "JXSX0MC6.pdf",
+    "type": "PDF",
+    "href": "/certificados/JXSX0MC6.pdf"
+  },
+  {
+    "title": "Primeiros Passos com React Native & Expo",
+    "fileName": "QVQ34J2N.pdf",
+    "originalName": "QVQ34J2N.pdf",
+    "type": "PDF",
+    "href": "/certificados/QVQ34J2N.pdf"
+  },
+  {
+    "title": "Trabalhando Com Componentes no React Native",
+    "fileName": "VG3RIMRS.pdf",
+    "originalName": "VG3RIMRS.pdf",
+    "type": "PDF",
+    "href": "/certificados/VG3RIMRS.pdf"
   }
 ];
