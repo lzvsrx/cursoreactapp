@@ -13,6 +13,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
+      <StatusBar style="auto" />
       <TextInput
         style={{ fontSize: 32 }}
         placeholder="olá"
