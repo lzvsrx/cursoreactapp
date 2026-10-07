@@ -10,7 +10,7 @@ No PowerShell:
 
 ```powershell
 cd C:\cursoreactapp\trilha-react-native-green-latern-app
-npm.cmd install
+npm.cmd ci
 npm.cmd start
 ```
 
@@ -23,4 +23,4 @@ Para abrir em um emulador Android configurado, execute `npm.cmd run android`.
 npx.cmd tsc --noEmit
 ```
 
-O projeto mantém as versões originais do repositório (Expo 46 e React Native 0.69).
+O projeto usa Expo SDK 57, React 19.2.3 e React Native 0.86.3. Requer Node.js >=22.13.0 e Expo Go compativel com SDK 57 ou development build.

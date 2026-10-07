@@ -107,3 +107,9 @@ Runs the app in the development mode.<br/>
 | [<img src="https://avatars3.githubusercontent.com/u/37452836?s=96&v=4"><br><sub>Felipe Aguiar</sub>](https://github.com/felipeAguiarCode) |
 | :---------------------------------------------------------------------------------------------------------------------------------------: |
 |                                             [Linkedin](www.linkedin.com/in/felipe-aguiar-exe)                                             |
+
+## Ambiente atualizado
+
+Expo SDK 57, React 19.2.3 e React Native 0.86.3. Requer Node.js >=22.13.0. Execute `npm ci` e `npm start` nesta pasta (no PowerShell, use `npm.cmd`). Use Expo Go compativel com SDK 57 ou development build.
+
+Validacao: `npm run typecheck`, `npm run doctor`, `npm run export:web`, `npm run export:android` e `npm run export:ios`.

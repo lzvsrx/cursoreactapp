@@ -12,7 +12,8 @@
     "export:android": "expo export --platform android",
     "doctor": "npx expo-doctor",
     "web:site": "npm --prefix web run dev",
-    "build:site": "npm --prefix web run build"
+    "build:site": "npm --prefix web run build",
+    "export:ios": "expo export --platform ios"
   },
   "dependencies": {
     "@expo/metro-runtime": "~57.0.16",
@@ -26,12 +27,12 @@
     "react-dom": "19.2.3",
     "react-native": "0.86.3",
     "react-native-safe-area-context": "~5.7.0",
-    "react-native-web": "^0.21.2"
+    "react-native-web": "~0.21.0"
   },
   "devDependencies": {
     "@babel/core": "^7.29.7",
     "@types/react": "~19.2.0",
-    "babel-preset-expo": "~57.0.14",
+    "babel-preset-expo": "^57.0.14",
     "typescript": "~6.0.3"
   },
   "private": true,
