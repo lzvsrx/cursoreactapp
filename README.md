@@ -1,6 +1,6 @@
-﻿# Projetos React e React Native
+# Projetos React e React Native
 
-Repositorio publico que reune os quatro projetos de C:\cursoreactapp, mantendo seus codigos, configuracoes, arquivos de dependencias, imagens e documentos.
+Repositorio publico que reune os cinco projetos de C:\cursoreactapp, mantendo seus codigos, configuracoes, arquivos de dependencias, imagens e documentos.
 
 | Pasta | Projeto |
 | --- | --- |
@@ -8,6 +8,7 @@ Repositorio publico que reune os quatro projetos de C:\cursoreactapp, mantendo s
 | `portfolio-lzdev` | Portfolio React Native com Expo e site completo na pasta `web` |
 | `react-native-bat-pass-generator` | Gerador de senhas com React Native e Expo |
 | `trilha-react-native-green-latern-app` | Aplicativo de lanterna com React Native e Expo |
+| `trilha-react-native-components` | Exemplos de componentes com React Native, TypeScript e Expo SDK 57 |
 
 ## Executar
 
@@ -39,3 +40,7 @@ Os scripts `npm run web`, `npm run android` e `npm run ios` iniciam as plataform
 Os READMEs originais foram preservados em cada pasta. Os arquivos `.env.example` documentam a configuracao das APIs web; configure suas proprias credenciais localmente. Dependencias instaladas, builds, caches, historicos Git individuais e credenciais locais nao fazem parte deste repositorio.
 
 O aplicativo de lanterna tem origem em https://github.com/digitalinnovationone/trilha-react-native-green-latern-app. As referencias e atribuicoes existentes nos projetos foram preservadas.
+
+## Componentes React Native (Expo SDK 57)
+
+A pasta `trilha-react-native-components` usa dependencias atuais compativeis com o SDK 57. Consulte seu README para requisitos e exemplos. Execute `cd trilha-react-native-components`, `npm ci` e `npm start`. Origem: https://github.com/digitalinnovationone/trilha-react-native-components.
