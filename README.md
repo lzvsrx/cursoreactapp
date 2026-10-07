@@ -1,6 +1,6 @@
 # Projetos React e React Native
 
-Repositorio publico que reune os cinco projetos de C:\cursoreactapp, mantendo seus codigos, configuracoes, arquivos de dependencias, imagens e documentos.
+Repositorio publico que reune seis projetos React e React Native, mantendo seus codigos, configuracoes, arquivos de dependencias, imagens e documentos.
 
 | Pasta | Projeto |
 | --- | --- |
@@ -9,6 +9,7 @@ Repositorio publico que reune os cinco projetos de C:\cursoreactapp, mantendo se
 | `react-native-bat-pass-generator` | Gerador de senhas com React Native e Expo |
 | `trilha-react-native-green-latern-app` | Aplicativo de lanterna com React Native e Expo |
 | `trilha-react-native-components` | Exemplos de componentes com React Native, TypeScript e Expo SDK 57 |
+| `trilha-react-native-flexbox` | Exemplo de Flexbox da DIO atualizado para Expo SDK 57 |
 
 ## Executar
 
@@ -26,7 +27,7 @@ Para o site dentro do portfolio integrado, use `cd portfolio-lzdev/web` e os mes
 
 ### Aplicativos Expo
 
-Entre em `portfolio-lzdev`, `react-native-bat-pass-generator`, `trilha-react-native-green-latern-app` ou `trilha-react-native-components`:
+Entre em `portfolio-lzdev`, `react-native-bat-pass-generator`, `trilha-react-native-green-latern-app`, `trilha-react-native-components` ou `trilha-react-native-flexbox`:
 
 ```sh
 npm ci
@@ -49,6 +50,6 @@ A pasta `trilha-react-native-components` usa dependencias atuais compativeis com
 
 Nos sites (`lzdev` e `portfolio-lzdev/web`), execute `npm run build` e `npm test`. Os sites usam React 19.3, Vite 8, Vitest 5 e TypeScript 7.
 
-Nos quatro aplicativos Expo, execute `npm run typecheck`, `npm run doctor`, `npm run export:web`, `npm run export:android` e `npm run export:ios`. As exportacoes validam os bundles; a compilacao e o teste dos aplicativos nativos em dispositivos exigem Android SDK/Xcode ou EAS Build. Babel 7 e TypeScript 6 foram mantidos por compatibilidade com o SDK 57.
+Nos cinco aplicativos Expo, execute `npm run typecheck`, `npm run doctor`, `npm run export:web`, `npm run export:android` e `npm run export:ios`. As exportacoes validam os bundles; a compilacao e o teste dos aplicativos nativos em dispositivos exigem Android SDK/Xcode ou EAS Build. Babel 7 e TypeScript 6 foram mantidos por compatibilidade com o SDK 57.
 
 Consulte `npm audit` em cada pasta. Ainda existem avisos em dependencias transitivas do Expo (braces, node-forge e uuid); nao aplique `npm audit fix --force`, pois a correcao sugerida regride o SDK e quebra esta migracao. Acompanhe atualizacoes oficiais do Expo.
