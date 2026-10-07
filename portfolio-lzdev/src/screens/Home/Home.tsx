@@ -1,5 +1,6 @@
 ﻿import React, { useMemo, useState } from 'react';
-import { Image, Linking, Platform, SafeAreaView, ScrollView, Text, TextInput, View } from 'react-native';
+import { Image, Linking, Platform, ScrollView, Text, TextInput, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
 import { Asset } from 'expo-asset';
 import * as Sharing from 'expo-sharing';
