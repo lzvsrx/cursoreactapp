@@ -47,8 +47,8 @@ Este repositorio foi reconstruido com base no projeto original `luizotaviodevs`,
 
 - React 19
 - React DOM 19
-- TypeScript 5
-- Vite 7
+- TypeScript 7
+- Vite 8
 - Vitest
 - Testing Library
 - Lucide React

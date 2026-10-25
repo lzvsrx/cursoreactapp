@@ -28,7 +28,8 @@
     "preview": "vite preview --host 0.0.0.0",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "audit": "npm audit --audit-level=high"
+    "audit": "npm audit --audit-level=high",
+    "test:api": "node --experimental-strip-types --test api/sync-github.checks.mjs"
   },
   "browserslist": {
     "production": [

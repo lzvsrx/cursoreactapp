@@ -11,7 +11,10 @@ export function BatTextInput(props : BatTextInputProps) {
   return (
       <TextInput
         style={styles.inputer}
-        placeholder='pass'
+        placeholder='Sua senha aparecerá aqui'
+        accessibilityLabel='Senha gerada'
+        editable={false}
+        selectTextOnFocus
         value={props.pass}
       />
   );

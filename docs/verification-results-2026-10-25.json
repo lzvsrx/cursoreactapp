@@ -1,0 +1,359 @@
+[
+  {
+    "project": "lzdev",
+    "command": "npm run build",
+    "code": 0,
+    "seconds": 19,
+    "log": "lzdev-run-build.log"
+  },
+  {
+    "project": "portfolio-lzdev/web",
+    "command": "npm run build",
+    "code": 0,
+    "seconds": 23,
+    "log": "portfolio-lzdev-web-run-build.log"
+  },
+  {
+    "project": "lzdev",
+    "command": "npm run test",
+    "code": 0,
+    "seconds": 36,
+    "log": "lzdev-run-test.log"
+  },
+  {
+    "project": "lzdev",
+    "command": "npm run test:api",
+    "code": 0,
+    "seconds": 2,
+    "log": "lzdev-run-test-api.log"
+  },
+  {
+    "project": "portfolio-lzdev/web",
+    "command": "npm run test",
+    "code": 0,
+    "seconds": 35,
+    "log": "portfolio-lzdev-web-run-test.log"
+  },
+  {
+    "project": "portfolio-lzdev/web",
+    "command": "npm run test:api",
+    "code": 0,
+    "seconds": 1,
+    "log": "portfolio-lzdev-web-run-test-api.log"
+  },
+  {
+    "project": "lzdev",
+    "command": "npm audit --json",
+    "code": 0,
+    "seconds": 3,
+    "log": "lzdev-audit---json.log"
+  },
+  {
+    "project": "portfolio-lzdev/web",
+    "command": "npm audit --json",
+    "code": 0,
+    "seconds": 3,
+    "log": "portfolio-lzdev-web-audit---json.log"
+  },
+  {
+    "project": "portfolio-lzdev",
+    "command": "npm run typecheck",
+    "code": 0,
+    "seconds": 8,
+    "log": "portfolio-lzdev-run-typecheck.log"
+  },
+  {
+    "project": "react-native-bat-pass-generator",
+    "command": "npm run typecheck",
+    "code": 0,
+    "seconds": 8,
+    "log": "react-native-bat-pass-generator-run-typecheck.log"
+  },
+  {
+    "project": "portfolio-lzdev",
+    "command": "npm run doctor",
+    "code": 0,
+    "seconds": 56,
+    "log": "portfolio-lzdev-run-doctor.log"
+  },
+  {
+    "project": "react-native-bat-pass-generator",
+    "command": "npm run doctor",
+    "code": 0,
+    "seconds": 54,
+    "log": "react-native-bat-pass-generator-run-doctor.log"
+  },
+  {
+    "project": "react-native-bat-pass-generator",
+    "command": "npm run export:web",
+    "code": 0,
+    "seconds": 43,
+    "log": "react-native-bat-pass-generator-run-export-web.log"
+  },
+  {
+    "project": "portfolio-lzdev",
+    "command": "npm run export:web",
+    "code": 0,
+    "seconds": 44,
+    "log": "portfolio-lzdev-run-export-web.log"
+  },
+  {
+    "project": "react-native-bat-pass-generator",
+    "command": "npm run export:android",
+    "code": 0,
+    "seconds": 70,
+    "log": "react-native-bat-pass-generator-run-export-android.log"
+  },
+  {
+    "project": "portfolio-lzdev",
+    "command": "npm run export:android",
+    "code": 0,
+    "seconds": 72,
+    "log": "portfolio-lzdev-run-export-android.log"
+  },
+  {
+    "project": "react-native-bat-pass-generator",
+    "command": "npm run export:ios",
+    "code": 0,
+    "seconds": 42,
+    "log": "react-native-bat-pass-generator-run-export-ios.log"
+  },
+  {
+    "project": "portfolio-lzdev",
+    "command": "npm run export:ios",
+    "code": 0,
+    "seconds": 42,
+    "log": "portfolio-lzdev-run-export-ios.log"
+  },
+  {
+    "project": "react-native-bat-pass-generator",
+    "command": "npm audit --json",
+    "code": 1,
+    "seconds": 11,
+    "log": "react-native-bat-pass-generator-audit---json.log"
+  },
+  {
+    "project": "portfolio-lzdev",
+    "command": "npm audit --json",
+    "code": 1,
+    "seconds": 8,
+    "log": "portfolio-lzdev-audit---json.log"
+  },
+  {
+    "project": "trilha-react-native-components",
+    "command": "npm run typecheck",
+    "code": 0,
+    "seconds": 11,
+    "log": "trilha-react-native-components-run-typecheck.log"
+  },
+  {
+    "project": "react-native-bat-sinal",
+    "command": "npm run typecheck",
+    "code": 0,
+    "seconds": 12,
+    "log": "react-native-bat-sinal-run-typecheck.log"
+  },
+  {
+    "project": "react-native-bat-sinal",
+    "command": "npm run test",
+    "code": 0,
+    "seconds": 2,
+    "log": "react-native-bat-sinal-run-test.log"
+  },
+  {
+    "project": "react-native-bat-sinal",
+    "command": "npm run doctor",
+    "code": 0,
+    "seconds": 52,
+    "log": "react-native-bat-sinal-run-doctor.log"
+  },
+  {
+    "project": "react-native-bat-sinal",
+    "command": "npm run export:web",
+    "code": 0,
+    "seconds": 13,
+    "log": "react-native-bat-sinal-run-export-web.log"
+  },
+  {
+    "project": "trilha-react-native-components",
+    "command": "npm run doctor",
+    "code": 0,
+    "seconds": 77,
+    "log": "trilha-react-native-components-run-doctor.log"
+  },
+  {
+    "project": "react-native-bat-sinal",
+    "command": "npm run export:android",
+    "code": 0,
+    "seconds": 27,
+    "log": "react-native-bat-sinal-run-export-android.log"
+  },
+  {
+    "project": "react-native-bat-sinal",
+    "command": "npm run export:ios",
+    "code": 0,
+    "seconds": 25,
+    "log": "react-native-bat-sinal-run-export-ios.log"
+  },
+  {
+    "project": "react-native-bat-sinal",
+    "command": "npm audit --json",
+    "code": 1,
+    "seconds": 6,
+    "log": "react-native-bat-sinal-audit---json.log"
+  },
+  {
+    "project": "trilha-react-native-components",
+    "command": "npm run export:web",
+    "code": 0,
+    "seconds": 50,
+    "log": "trilha-react-native-components-run-export-web.log"
+  },
+  {
+    "project": "trilha-react-native-expo-events",
+    "command": "npm run typecheck",
+    "code": 0,
+    "seconds": 25,
+    "log": "trilha-react-native-expo-events-run-typecheck.log"
+  },
+  {
+    "project": "trilha-react-native-components",
+    "command": "npm run export:android",
+    "code": 0,
+    "seconds": 34,
+    "log": "trilha-react-native-components-run-export-android.log"
+  },
+  {
+    "project": "trilha-react-native-components",
+    "command": "npm run export:ios",
+    "code": 0,
+    "seconds": 26,
+    "log": "trilha-react-native-components-run-export-ios.log"
+  },
+  {
+    "project": "trilha-react-native-components",
+    "command": "npm audit --json",
+    "code": 1,
+    "seconds": 5,
+    "log": "trilha-react-native-components-audit---json.log"
+  },
+  {
+    "project": "trilha-react-native-flexbox",
+    "command": "npm run typecheck",
+    "code": 0,
+    "seconds": 29,
+    "log": "trilha-react-native-flexbox-run-typecheck.log"
+  },
+  {
+    "project": "trilha-react-native-expo-events",
+    "command": "npm run doctor",
+    "code": 0,
+    "seconds": 79,
+    "log": "trilha-react-native-expo-events-run-doctor.log"
+  },
+  {
+    "project": "trilha-react-native-expo-events",
+    "command": "npm run export:web",
+    "code": 0,
+    "seconds": 59,
+    "log": "trilha-react-native-expo-events-run-export-web.log"
+  },
+  {
+    "project": "trilha-react-native-flexbox",
+    "command": "npm run doctor",
+    "code": 0,
+    "seconds": 101,
+    "log": "trilha-react-native-flexbox-run-doctor.log"
+  },
+  {
+    "project": "trilha-react-native-expo-events",
+    "command": "npm run export:android",
+    "code": 0,
+    "seconds": 38,
+    "log": "trilha-react-native-expo-events-run-export-android.log"
+  },
+  {
+    "project": "trilha-react-native-expo-events",
+    "command": "npm run export:ios",
+    "code": 0,
+    "seconds": 28,
+    "log": "trilha-react-native-expo-events-run-export-ios.log"
+  },
+  {
+    "project": "trilha-react-native-flexbox",
+    "command": "npm run export:web",
+    "code": 0,
+    "seconds": 41,
+    "log": "trilha-react-native-flexbox-run-export-web.log"
+  },
+  {
+    "project": "trilha-react-native-expo-events",
+    "command": "npm audit --json",
+    "code": 1,
+    "seconds": 10,
+    "log": "trilha-react-native-expo-events-audit---json.log"
+  },
+  {
+    "project": "trilha-react-native-green-latern-app",
+    "command": "npm run typecheck",
+    "code": 0,
+    "seconds": 32,
+    "log": "trilha-react-native-green-latern-app-run-typecheck.log"
+  },
+  {
+    "project": "trilha-react-native-flexbox",
+    "command": "npm run export:android",
+    "code": 0,
+    "seconds": 41,
+    "log": "trilha-react-native-flexbox-run-export-android.log"
+  },
+  {
+    "project": "trilha-react-native-flexbox",
+    "command": "npm run export:ios",
+    "code": 0,
+    "seconds": 27,
+    "log": "trilha-react-native-flexbox-run-export-ios.log"
+  },
+  {
+    "project": "trilha-react-native-flexbox",
+    "command": "npm audit --json",
+    "code": 1,
+    "seconds": 6,
+    "log": "trilha-react-native-flexbox-audit---json.log"
+  },
+  {
+    "project": "trilha-react-native-green-latern-app",
+    "command": "npm run doctor",
+    "code": 0,
+    "seconds": 75,
+    "log": "trilha-react-native-green-latern-app-run-doctor.log"
+  },
+  {
+    "project": "trilha-react-native-green-latern-app",
+    "command": "npm run export:web",
+    "code": 0,
+    "seconds": 60,
+    "log": "trilha-react-native-green-latern-app-run-export-web.log"
+  },
+  {
+    "project": "trilha-react-native-green-latern-app",
+    "command": "npm run export:android",
+    "code": 0,
+    "seconds": 37,
+    "log": "trilha-react-native-green-latern-app-run-export-android.log"
+  },
+  {
+    "project": "trilha-react-native-green-latern-app",
+    "command": "npm run export:ios",
+    "code": 0,
+    "seconds": 40,
+    "log": "trilha-react-native-green-latern-app-run-export-ios.log"
+  },
+  {
+    "project": "trilha-react-native-green-latern-app",
+    "command": "npm audit --json",
+    "code": 1,
+    "seconds": 9,
+    "log": "trilha-react-native-green-latern-app-audit---json.log"
+  }
+]

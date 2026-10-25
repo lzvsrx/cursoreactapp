@@ -33,7 +33,7 @@ npm.cmd run export:android -- --output-dir dist-native
 
 As exportações ficam em `dist` e `dist-native`, ignoradas pelo Git. React, React Native, TypeScript e Babel seguem as versões compatíveis com o SDK, mesmo quando existem versões principais mais recentes.
 
-`npm.cmd audit` ainda reporta alertas transitivos nas ferramentas do Expo/Metro (incluindo `braces`, `node-forge` e `uuid`). As versões estáveis disponíveis não eliminam todos esses alertas; não use `npm audit fix --force`, que propõe rebaixar o Expo e quebra a compatibilidade atual.
+`npm.cmd audit` ainda reporta alertas transitivos nas ferramentas do Expo (incluindo `node-forge` e `zod`). As versões compatíveis disponíveis não eliminam todos esses alertas; não use `npm audit fix --force`, que propõe rebaixar o Expo e quebra a compatibilidade atual.
 
 ## Executar o site completo
 
@@ -60,3 +60,7 @@ Para recursos do servidor, consulte `web/README.md` e configure `web/.env.exampl
 - `web/public/certificados`: documentos servidos pelo site.
 
 As três pastas de origem foram preservadas. Componentes do gerador de senhas permanecem na estrutura original, mas não são usados pela tela do portfólio. Os recursos administrativos do site estão na versão web; o aplicativo apresenta o portfólio e seus documentos.
+
+## Revisao de 25/10/2026
+
+Dependencias alinhadas ao Expo SDK 57. O gerador herdado usa expo-crypto, produz 16 caracteres e trata falhas da area de transferencia. No portfolio, esses componentes sao preservados como material de estudo; a tela principal continua sendo o portfolio. Consulte o README da raiz para verificacoes e backups.

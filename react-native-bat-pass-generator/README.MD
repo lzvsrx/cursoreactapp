@@ -113,3 +113,7 @@ Runs the app in the development mode.<br/>
 Expo SDK 57, React 19.2.3 e React Native 0.86.3. Requer Node.js >=22.13.0. Execute `npm ci` e `npm start` nesta pasta (no PowerShell, use `npm.cmd`). Use Expo Go compativel com SDK 57 ou development build.
 
 Validacao: `npm run typecheck`, `npm run doctor`, `npm run export:web`, `npm run export:android` e `npm run export:ios`.
+
+## Revisao de 25/10/2026
+
+Dependencias alinhadas ao Expo SDK 57. O gerador usa expo-crypto, produz 16 caracteres e trata falhas da area de transferencia. O botao de copiar permanece desabilitado ate gerar uma senha. Na web, a geracao criptografica exige HTTPS ou localhost. Consulte o README da raiz para verificacoes e backups.

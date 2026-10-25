@@ -1,3 +1,6 @@
+import { Buffer } from 'node:buffer';
+import process from 'node:process';
+
 type SyncFile = {
   label?: string;
   path: string;
@@ -94,21 +97,38 @@ export default async function handler(request: any, response: any) {
     return;
   }
 
-  const body = typeof request.body === 'string' ? JSON.parse(request.body) as SyncRequest : request.body as SyncRequest;
+  let body: SyncRequest;
+  try {
+    body = typeof request.body === 'string' ? JSON.parse(request.body) : request.body;
+    if (!body || typeof body !== 'object' || Array.isArray(body)) throw new Error('Invalid body');
+  } catch {
+    sendJson(response, 400, { error: 'Corpo JSON invalido.' });
+    return;
+  }
   const owner = process.env.GITHUB_SYNC_OWNER || body.owner || 'lzvsrx';
   const repo = process.env.GITHUB_SYNC_REPO || body.repo || 'lzdev';
   const branch = process.env.GITHUB_SYNC_BRANCH || body.branch || 'main';
   const files = body.files ?? [];
 
-  if (!Array.isArray(files) || files.length === 0) {
+  if (!Array.isArray(files) || files.length === 0 || files.length > allowedPaths.size) {
     sendJson(response, 400, { error: 'Nenhum arquivo recebido para sincronizar.' });
     return;
   }
 
-  const invalidFile = files.find((file) => !allowedPaths.has(file.path));
-
-  if (invalidFile) {
-    sendJson(response, 400, { error: `Caminho nao permitido: ${invalidFile.path}` });
+  if (files.some((file) => !file || typeof file !== 'object' || !allowedPaths.has(file.path) || !Object.hasOwn(file, 'content'))) {
+    sendJson(response, 400, { error: 'Arquivo invalido ou caminho nao permitido.' });
+    return;
+  }
+  if (new Set(files.map(file => file.path)).size !== files.length) {
+    sendJson(response, 400, { error: 'Caminhos duplicados.' });
+    return;
+  }
+  if (typeof owner !== 'string' || !/^[a-zA-Z0-9-]+$/.test(owner) || typeof repo !== 'string' || !/^[a-zA-Z0-9_.-]+$/.test(repo) || typeof branch !== 'string' || !branch.trim()) {
+    sendJson(response, 400, { error: 'Repositorio ou branch invalido.' });
+    return;
+  }
+  if (Buffer.byteLength(JSON.stringify(files), 'utf8') > 1024 * 1024) {
+    sendJson(response, 413, { error: 'Dados excedem o limite de 1 MiB.' });
     return;
   }
 
@@ -124,7 +144,6 @@ export default async function handler(request: any, response: any) {
       files: files.map((file) => file.path),
     });
   } catch (error) {
-    const message = error instanceof Error ? error.message : 'Erro desconhecido ao sincronizar com o GitHub.';
-    sendJson(response, 500, { error: message });
+    sendJson(response, 502, { error: 'Falha ao sincronizar com o GitHub. Verifique as permissoes e tente novamente.' });
   }
 }

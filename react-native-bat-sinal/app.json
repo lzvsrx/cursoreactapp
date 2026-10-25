@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "Bat-Sinal | Gotham",
+    "slug": "react-native-bat-sinal",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "ios": { "supportsTablet": true },
+    "web": { "bundler": "metro" }
+  }
+}
