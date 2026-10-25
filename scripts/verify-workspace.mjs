@@ -3,7 +3,7 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { resolve, join } from 'node:path';
 import { tmpdir } from 'node:os';
 
-export const projects = ['lzdev', 'portfolio-lzdev/web', 'portfolio-lzdev', 'react-native-bat-pass-generator', 'react-native-bat-sinal', 'trilha-react-native-components', 'trilha-react-native-expo-events', 'trilha-react-native-flexbox', 'trilha-react-native-green-latern-app'];
+export const projects = ['lzdev', 'portfolio-lzdev/web', 'portfolio-lzdev', 'react-native-bat-pass-generator', 'react-native-bat-sinal', 'trilha-react-native-components', 'trilha-react-native-expo-events', 'trilha-react-native-flexbox', 'trilha-react-native-green-latern-app', 'trilha-react-native-hooks'];
 const root = resolve(import.meta.dirname, '..');
 const logDir = join(tmpdir(), 'cursoreactapp-verification');
 await mkdir(logDir, { recursive: true });
@@ -32,7 +32,7 @@ async function worker() {
   while (next < projects.length) {
     const project = projects[next++];
     const web = project === 'lzdev' || project.endsWith('/web');
-    for (const task of web ? ['build', 'test', 'test:api'] : ['typecheck', ...(project === 'react-native-bat-sinal' ? ['test'] : []), 'doctor', 'export:web', 'export:android', 'export:ios']) {
+    for (const task of web ? ['build', 'test', 'test:api'] : ['typecheck', ...(['react-native-bat-sinal', 'trilha-react-native-hooks'].includes(project) ? ['test'] : []), 'doctor', 'export:web', 'export:android', 'export:ios']) {
       await command(project, ['run', task]);
     }
     await command(project, ['audit', '--json']);

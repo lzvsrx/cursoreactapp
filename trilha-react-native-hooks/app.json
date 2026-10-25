@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "Hooks Lab | DIO",
+    "slug": "trilha-react-native-hooks",
+    "version": "1.0.0",
+    "orientation": "default",
+    "userInterfaceStyle": "dark",
+    "ios": { "supportsTablet": true },
+    "web": { "bundler": "metro" }
+  }
+}

@@ -12,6 +12,7 @@ Repositorio publico que reune projetos React e React Native, mantendo seus codig
 | `trilha-react-native-components` | Exemplos de componentes com React Native, TypeScript e Expo SDK 57 |
 | `trilha-react-native-flexbox` | Exemplo de Flexbox da DIO atualizado para Expo SDK 57 |
 | `trilha-react-native-expo-events` | Exemplos de eventos de entrada e toque com Expo SDK 57 |
+| `trilha-react-native-hooks` | Hooks recriados do zero: estado, efeitos e tarefas com Expo SDK 58 |
 
 ## Executar
 
@@ -36,7 +37,7 @@ npm ci
 npm start
 ```
 
-Os scripts `npm run web`, `npm run android` e `npm run ios` iniciam as plataformas correspondentes. Todos os aplicativos usam Expo SDK 57, React 19.2.3 e React Native 0.86.3, seguindo a matriz de compatibilidade do Expo. Use um Expo Go compativel com SDK 57 ou um development build.
+Os scripts `npm run web`, `npm run android` e `npm run ios` iniciam as plataformas correspondentes. Hooks usa Expo SDK 58, React 19.3.0 e React Native 0.88.0. Os demais aplicativos usam Expo SDK 57, React 19.2.3 e React Native 0.86.3. Use Expo Go compativel com o SDK do projeto ou um development build.
 
 ## Configuracao e documentacao
 
@@ -52,7 +53,7 @@ A pasta `trilha-react-native-components` usa dependencias atuais compativeis com
 
 Nos sites (`lzdev` e `portfolio-lzdev/web`), execute `npm run build` e `npm test`. Os sites usam React 19.3, Vite 8, Vitest 5 e TypeScript 7.
 
-Nos sete aplicativos Expo, execute `npm run typecheck`, `npm run doctor`, `npm run export:web`, `npm run export:android` e `npm run export:ios`. As exportacoes validam os bundles; a compilacao e o teste dos aplicativos nativos em dispositivos exigem Android SDK/Xcode ou EAS Build. Babel 7 e TypeScript 6 foram mantidos por compatibilidade com o SDK 57.
+Nos oito aplicativos Expo, execute `npm run typecheck`, `npm run doctor`, `npm run export:web`, `npm run export:android` e `npm run export:ios`. As exportacoes validam os bundles; a compilacao e o teste dos aplicativos nativos em dispositivos exigem Android SDK/Xcode ou EAS Build. Babel 7 e TypeScript 6 seguem a compatibilidade de cada SDK.
 
 Consulte `npm audit` em cada pasta. Ainda existem avisos em dependencias transitivas do Expo (node-forge e zod); nao aplique `npm audit fix --force`, pois a correcao sugerida regride o SDK e quebra esta migracao. Acompanhe atualizacoes oficiais do Expo.
 
@@ -60,7 +61,9 @@ Consulte `npm audit` em cada pasta. Ainda existem avisos em dependencias transit
 
 Consulte o [relatorio de revisao de 25/10/2026](docs/REVISAO-2026-10-25.md) para os resultados, correcoes e pendencias. Os backups dos arquivos ignorados ficam na [Release desta revisao](https://github.com/lzvsrx/cursoreactapp/releases/tag/revisao-2026-10-25).
 
-Para verificar os nove pacotes, com dependencias ja instaladas:
+Esse relatorio e o backup retratam a revisao anterior a adicao de Hooks. Os resultados do novo projeto estao em [trilha-react-native-hooks/README.md](trilha-react-native-hooks/README.md).
+
+Para verificar os dez pacotes, com dependencias ja instaladas:
 
 ```sh
 node scripts/verify-workspace.mjs
