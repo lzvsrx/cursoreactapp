@@ -1,12 +1,13 @@
 ﻿import React, { useMemo, useState } from 'react';
-import { Image, Linking, Platform, ScrollView, Text, TextInput, View } from 'react-native';
+import { Linking, Platform, ScrollView, Text, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
 import { Asset } from 'expo-asset';
 import * as Sharing from 'expo-sharing';
 import styles from './Style';
+import ProfileHeader from '../../components/ProfileHeader';
 import Button from '../../components/PortfolioButton/PortfolioButton';
-import { socialLinks, skills, databases, services } from '../../services/portfolio';
+import { socialLinks, databases, services } from '../../services/portfolio';
 import { githubRepositories } from '../../services/repositories';
 import { certificates, Certificate } from '../../services/certificates';
 import { certificateAssets } from '../../services/certificateAssets';
@@ -36,10 +37,7 @@ export default function Home() {
   }
   return <SafeAreaView style={styles.safe}><StatusBar style="light" /><ScrollView contentContainerStyle={styles.container} keyboardShouldPersistTaps="handled">
     <View style={styles.header}>
-      <Text style={styles.brand}>{'< LZ Dev />'}</Text>
-      <Image source={require('../../../assets/profile.jpg')} style={styles.photo} accessibilityLabel="Foto de Luiz Otavio Valenzi Sousa" />
-      <Text accessibilityRole="header" style={styles.title}>Luiz Otavio Valenzi Sousa</Text>
-      <Text style={styles.subtitle}>Desenvolvedor Full Stack</Text>
+      <ProfileHeader />
       <Text style={styles.text}>Desenvolvedor apaixonado por tecnologia, com experiência em criação de sites, aplicativos, programação e serviços de informática.</Text>
       <View style={styles.row}><Button label="Conversar no WhatsApp" active onPress={() => openLink('https://wa.me/5535999215995')} /><Button label="GitHub" onPress={() => openLink('https://github.com/lzvsrx')} /></View>
       <View style={styles.row}>{sections.map(s => <Button key={s} label={s} active={section === s} onPress={() => { setSection(s); setSearch(''); setError(''); }} />)}</View>
@@ -50,7 +48,7 @@ export default function Home() {
       {section === 'Sobre' && <>
         <View style={styles.card}><Text style={styles.cardTitle}>Desenvolvimento web, apps e manutenção de computadores</Text><Text style={styles.text}>Especializado em desenvolvimento web e manutenção de computadores, com atuação em sites profissionais, sistemas personalizados, aplicativos mobile, automações e suporte técnico.</Text></View>
         <Text style={styles.muted}>{githubRepositories.length} projetos · {certificates.length} certificados e documentos</Text>
-        <View style={styles.row}>{skills.map(s => <View key={s.name} style={[styles.card, { width: '100%' }]}><Text style={styles.cardTitle}>{s.name} · {s.percentage}%</Text><View style={styles.track}><View style={[styles.fill, { width: `${s.percentage}%` }]} /></View></View>)}</View>
+
         <Text style={styles.cardTitle}>Bancos de dados</Text><Text style={styles.text}>{databases.join(' · ')}</Text>
       </>}
       {(section === 'Projetos' || section === 'Certificados') && <TextInput accessibilityLabel={section === 'Projetos' ? 'Buscar projeto' : 'Buscar certificado'} placeholder={section === 'Projetos' ? 'Buscar por nome, tecnologia ou descrição' : 'Buscar curso ou arquivo'} placeholderTextColor="#94a3b8" value={search} onChangeText={setSearch} style={styles.input} />}

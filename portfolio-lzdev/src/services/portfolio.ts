@@ -1,11 +1,11 @@
 export const socialLinks = [
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/luiz-otavio-valenzi-sousa-1180bb360/'},
-  { label: 'Instagram', href: 'https://www.instagram.com/luizotaviovs/'},
+  { label: 'Instagram', href: 'https://www.instagram.com/luizotaviovsdevs/'},
   { label: 'Instagram LZ World Games', href: 'https://www.instagram.com/lzworldgames/'},
   { label: 'WhatsApp', href: 'https://wa.me/5535999215995'},
   { label: 'Telefone', href: 'tel:+5535999215995'},
   { label: 'GitHub', href: 'https://github.com/lzvsrx'},
-  { label: 'Repositorio', href: 'https://github.com/lzvsrx/lzworldstech-dev'},
+  { label: 'Portfólio original', href: 'https://github.com/lzvsrx/lzdev'},
 ];
 export const skills = [
   { name: 'HTML', percentage: 95},
@@ -64,3 +64,13 @@ export const services = [
     title: 'Criacao de Apps',
     text: 'Aplicativos mobile e web apps com tecnologias modernas e experiencia objetiva para o usuario.'},
 ];
+
+// Os níveis são os percentuais já publicados no portfólio lzdev.
+export const skillBranches = [
+  { title: 'Web e interfaces', names: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React.js'] },
+  { title: 'Backend e arquitetura', names: ['PHP', 'Node.js', 'Java', 'Orientacao a Objetos', 'Estruturas de Dados', 'Spring Boot', 'Spring Data JPA', 'Spring Security', 'APIs REST e Swagger', 'Maven e Gradle', 'JUnit e Mockito', 'SOLID e Design Patterns', 'UML'] },
+  { title: 'Mobile', names: ['React Native', 'Flutter', 'Swift', 'Kotlin'] },
+  { title: 'Python e dados', names: ['Python', 'Analise de Dados com Python', 'Django'] },
+  { title: 'Desenvolvimento de jogos', names: ['Unity 3D', 'C# para Jogos', 'Game Design', 'Fisica e IA em Jogos'] },
+  { title: 'Infraestrutura e formação', names: ['IoT e Sensores', 'Redes de Computadores', 'Direito Digital', 'Empreendedorismo e Inovacao', 'Tecnico de Informatica'] },
+] as const;

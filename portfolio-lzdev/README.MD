@@ -64,3 +64,8 @@ As três pastas de origem foram preservadas. Componentes do gerador de senhas pe
 ## Revisao de 25/10/2026
 
 Dependencias alinhadas ao Expo SDK 57. O gerador herdado usa expo-crypto, produz 16 caracteres e trata falhas da area de transferencia. No portfolio, esses componentes sao preservados como material de estudo; a tela principal continua sendo o portfolio. Consulte o README da raiz para verificacoes e backups.
+
+
+## Desafio DIO: Perfil e Habilidades
+
+Duas telas com abas fixas, foto e nome compartilhados, contatos e uma arvore de habilidades com niveis. Consulte [a entrega do desafio](DESAFIO-DIO.md) para requisitos, arquivos, execucao e validacao. Origem: https://github.com/lzvsrx/lzdev.

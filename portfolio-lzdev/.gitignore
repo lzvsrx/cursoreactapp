@@ -21,3 +21,6 @@ dist-native/
 !.env.example
 *.pem
 coverage/
+
+# Bundles de validacao do desafio DIO
+dist-dio/
