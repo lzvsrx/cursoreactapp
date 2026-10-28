@@ -2,8 +2,14 @@
 
 Repositorio publico que reune projetos React e React Native, mantendo seus codigos, configuracoes, arquivos de dependencias, imagens e documentos.
 
+Entrega de 28/10/2026: consulte o [relatório e instruções de restauração](docs/ENTREGA-2026-10-28.md). Dependências, builds e caches ignorados ficam na [Release de backup completo](https://github.com/lzvsrx/cursoreactapp/releases/tag/backup-completo-2026-10-28).
+
 | Pasta | Projeto |
 | --- | --- |
+| `trilha-react-native-navigation-drawer` | Drawer Explorer com Expo SDK 58, menu lateral e rotas tipadas |
+| `trilha-react-native-navigation-tabs` | Tabs Atelier com Expo SDK 58, abas tipadas, filtros e favoritos |
+| `trilha-react-native-navigation-stack` | Stack Studio recriado com Expo SDK 58, Native Stack e rotas tipadas |
+| `navigation-base-repo` | Navigation Lab recriado do zero com Expo SDK 58, abas e pilha tipadas |
 | `lzdev` | Portfolio web com React, TypeScript e Vite |
 | `portfolio-lzdev` | Portfolio React Native com Expo e site completo na pasta `web` |
 | `react-native-bat-pass-generator` | Gerador de senhas com React Native e Expo |

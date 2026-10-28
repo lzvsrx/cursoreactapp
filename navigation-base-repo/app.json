@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "Navigation Lab",
+    "slug": "navigation-base-repo",
+    "version": "1.0.0",
+    "orientation": "default",
+    "userInterfaceStyle": "dark",
+    "scheme": "navigationlab",
+    "ios": { "supportsTablet": true },
+    "web": { "bundler": "metro" }
+  }
+}

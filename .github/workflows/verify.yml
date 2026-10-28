@@ -8,7 +8,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        project: [lzdev, portfolio-lzdev/web, portfolio-lzdev, react-native-bat-pass-generator, react-native-bat-sinal, trilha-react-native-components, trilha-react-native-expo-events, trilha-react-native-flexbox, trilha-react-native-green-latern-app, trilha-react-native-hooks]
+        project: [lzdev, portfolio-lzdev/web, portfolio-lzdev, react-native-bat-pass-generator, react-native-bat-sinal, trilha-react-native-components, trilha-react-native-expo-events, trilha-react-native-flexbox, trilha-react-native-green-latern-app, trilha-react-native-hooks, navigation-base-repo, trilha-react-native-navigation-stack, trilha-react-native-navigation-tabs, trilha-react-native-navigation-drawer]
     defaults:
       run:
         working-directory: ${{ matrix.project }}

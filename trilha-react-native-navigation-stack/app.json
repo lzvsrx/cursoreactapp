@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "Stack Studio",
+    "slug": "trilha-react-native-navigation-stack",
+    "scheme": "stackstudio",
+    "version": "1.0.0",
+    "orientation": "default",
+    "userInterfaceStyle": "light",
+    "ios": { "supportsTablet": true },
+    "web": { "bundler": "metro" }
+  }
+}

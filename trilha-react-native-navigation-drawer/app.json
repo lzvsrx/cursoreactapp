@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "Drawer Explorer",
+    "slug": "trilha-react-native-navigation-drawer",
+    "version": "1.0.0",
+    "orientation": "default",
+    "userInterfaceStyle": "light",
+    "ios": { "supportsTablet": true },
+    "web": { "bundler": "metro" }
+  }
+}

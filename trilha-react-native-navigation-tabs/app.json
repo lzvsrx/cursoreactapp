@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "Tabs Atelier",
+    "slug": "trilha-react-native-navigation-tabs",
+    "version": "1.0.0",
+    "orientation": "default",
+    "userInterfaceStyle": "dark",
+    "ios": { "supportsTablet": true },
+    "web": { "bundler": "metro" }
+  }
+}

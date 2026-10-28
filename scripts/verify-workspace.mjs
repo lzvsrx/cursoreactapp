@@ -3,7 +3,7 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { resolve, join } from 'node:path';
 import { tmpdir } from 'node:os';
 
-export const projects = ['lzdev', 'portfolio-lzdev/web', 'portfolio-lzdev', 'react-native-bat-pass-generator', 'react-native-bat-sinal', 'trilha-react-native-components', 'trilha-react-native-expo-events', 'trilha-react-native-flexbox', 'trilha-react-native-green-latern-app', 'trilha-react-native-hooks'];
+export const projects = ['lzdev', 'portfolio-lzdev/web', 'portfolio-lzdev', 'react-native-bat-pass-generator', 'react-native-bat-sinal', 'trilha-react-native-components', 'trilha-react-native-expo-events', 'trilha-react-native-flexbox', 'trilha-react-native-green-latern-app', 'trilha-react-native-hooks', 'navigation-base-repo', 'trilha-react-native-navigation-stack', 'trilha-react-native-navigation-tabs', 'trilha-react-native-navigation-drawer'];
 const root = resolve(import.meta.dirname, '..');
 const logDir = join(tmpdir(), 'cursoreactapp-verification');
 await mkdir(logDir, { recursive: true });
