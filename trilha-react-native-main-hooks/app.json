@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "Main Hooks Studio",
+    "slug": "trilha-react-native-main-hooks",
+    "version": "1.0.0",
+    "orientation": "default",
+    "userInterfaceStyle": "light",
+    "ios": { "supportsTablet": true },
+    "web": { "bundler": "metro" }
+  }
+}

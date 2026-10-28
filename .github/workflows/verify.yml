@@ -8,7 +8,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        project: [lzdev, portfolio-lzdev/web, portfolio-lzdev, react-native-bat-pass-generator, react-native-bat-sinal, trilha-react-native-components, trilha-react-native-expo-events, trilha-react-native-flexbox, trilha-react-native-green-latern-app, trilha-react-native-hooks, navigation-base-repo, trilha-react-native-navigation-stack, trilha-react-native-navigation-tabs, trilha-react-native-navigation-drawer]
+        project: [lzdev, portfolio-lzdev/web, portfolio-lzdev, react-native-bat-pass-generator, react-native-bat-sinal, trilha-react-native-components, trilha-react-native-expo-events, trilha-react-native-flexbox, trilha-react-native-green-latern-app, trilha-react-native-hooks, trilha-react-native-main-hooks, navigation-base-repo, trilha-react-native-navigation-stack, trilha-react-native-navigation-tabs, trilha-react-native-navigation-drawer]
     defaults:
       run:
         working-directory: ${{ matrix.project }}
@@ -25,7 +25,7 @@ jobs:
         run: npm run build && npm test && npm run test:api
       - if: matrix.project != 'lzdev' && matrix.project != 'portfolio-lzdev/web'
         run: npm run doctor && npx expo export --platform all
-      - if: matrix.project == 'react-native-bat-sinal' || matrix.project == 'trilha-react-native-hooks'
+      - if: matrix.project == 'react-native-bat-sinal' || matrix.project == 'trilha-react-native-hooks' || matrix.project == 'trilha-react-native-main-hooks'
         run: npm test
       - name: Report dependency advisories
         continue-on-error: true
