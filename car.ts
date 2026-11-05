@@ -1,0 +1,1 @@
+{"expo":{"name":"Lamborghini Garage DIO","slug":"lamborghini-garage-dio","version":"1.0.0","orientation":"portrait","userInterfaceStyle":"dark","newArchEnabled":true,"ios":{"supportsTablet":true},"android":{"edgeToEdgeEnabled":true},"web":{"bundler":"metro"}}}
