@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "DIO Media Studio",
+    "slug": "dio-media-studio",
+    "scheme": "diomedia",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.dio.mediastudio",
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "READ_MEDIA_IMAGES",
+        "READ_MEDIA_VIDEO",
+        "READ_MEDIA_AUDIO"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Permitir usar a câmera para capturar fotos e vídeos.",
+          "microphonePermission": "Permitir gravar áudio nos vídeos.",
+          "recordAudioAndroid": true
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Permitir acessar sua galeria.",
+          "savePhotosPermission": "Permitir salvar arquivos na galeria.",
+          "isAccessMediaLocationEnabled": false
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Permitir escolher mídias da galeria.",
+          "cameraPermission": "Permitir acessar a câmera.",
+          "microphonePermission": "Permitir usar o microfone."
+        }
+      ],
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Permitir usar o microfone."
+        }
+      ]
+    ],
+    "experiments": {
+      "tsconfigPaths": true
+    }
+  }
+}
